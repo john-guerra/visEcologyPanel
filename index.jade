@@ -1,0 +1,237 @@
+doctype html
+html
+  head
+    title The Professional Ecology of Visualization: Industry perspective
+    meta(charset='utf-8')
+    meta(name='author', content='John Alexis Guerra Gomez')
+    meta(name='description', content='The Professional Ecology of Visualization: Industry Perspective')
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+    //- link(href='lib/css/reveal.css', rel='stylesheet')
+    //- link(href='lib/css/theme/simple.css', rel='stylesheet')
+    //- link(href='lib/css/zenburn.css', rel='stylesheet')
+    link(href='style.css', rel='stylesheet')
+    //- Printing and PDF exports -->
+    script.
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'lib/css/print/pdf.css' : 'lib/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    //- script(src='lib/js/d3.min.js')
+    //- script(src='lib/js/bumpChartPhotos.js')
+  body
+    .reveal
+      .slides
+        section#title
+          h2 The Professional Ecology of Visualization
+          h3 Industry perspective
+          br
+          br
+          div#footer
+            dif#left
+               &nbsp;
+            div#middle
+              a(href='http://johnguerra.co/', target='_blank') John Alexis Guerra Gómez
+              p.medium @duto_guerra
+              p.small Use
+                strong  spacebar
+                |  and the arrows to advance slides
+              p.small
+                a(href='http://infovis.co/visEcology', target='_blank') http://infovis.co/visEcology
+              //- a(href='https://labs.yahoo.com/', target='_blank') Yahoo Labs
+            img#right(src='images/labs_us_purple_500px_wide.png' width="200px" alt="Yahoo Labs logo")
+
+        section#whatIdo
+          section
+            h2 What I do?
+          section
+            img#right(src='images/flickrstats.png' alt="Flickr stats")
+          section
+            img#right(src='images/Mobile Stats.png' alt="Mockup mobile stats")
+          section
+            img#right(src='images/treemap.png' alt="Flickr photos by color")
+          section
+            img#right(src='images/whitehouse.png' alt="White house photos")
+          section
+            img#right(src='images/ranking.png' alt="Flickr prototype")
+
+        section#advantages
+          section
+            h2 Advantages
+            ul
+              li Access to billions of users
+              li Access to data
+              li Access to computing power
+              li No grant proposals (usually)
+              li Many real world problems to work on
+          section
+            h2 Users
+            ul
+              li Literally millions of users
+              li Chance to create real impact
+          section
+            h2 Data
+            ul
+              li Access to real world data
+              li Check #[a(href="http://yahoolabs.tumblr.com/post/89783581601/one-hundred-million-creative-commons-flickr-images") YFMMC100M]
+          section
+            h2 Infrastructure
+            ul
+              li Development grids
+              li Countless VMs on demmand
+              li Option of real world deployments
+          section
+            h2 No grants writing
+            ul
+              li Nor teaching
+          section
+            h2 Problems to work on
+            ul
+              li Users requests
+              li Engineer's requests
+              li Unused datasets
+
+          section
+            h2 Advantages haiku
+            p.fragment Industry research
+            p.fragment We have the big data
+            p.fragment and the users too
+
+        section
+          section#challenges
+            h2 Challenges
+            ul
+              li Access to users
+              li Restrictions on data
+              li Quaterly results, and revenue driven
+              li Engineering oriented
+              li Internal facing
+              li Bigger consequences
+              li Intellectual Property
+          section
+            h2 Access to users
+            ul
+              li Users behind a sales firewall
+              li Company wants to avoid spam
+          section
+            h2 Restrictions on data
+            ul
+              li Users' privacy is a serious issue
+              li Company wants to avoid spamimg users
+          section
+            h2 Quaterly results, and revenue driven
+            ul
+              li Results measured by quarters
+              li Is your research impacting product?
+              li How is your research generating revenue?
+              li You have to be two quarters ahead of development
+
+          section
+            h2 Engineering oriented
+            ul
+              li A PhD is "an engineer with an ego"
+              li You are required to write code like an engineer
+              li You spend most of your time consulting
+          section
+            h2 Internal facing
+            ul
+              li Infovis is usually restricted to internal use
+              li PMs think that infovis is to complicated for users
+          section
+            h2 Bigger consequences
+            ul
+              li "Change it back!!"
+              li One mistake can jeopardize the company's reputation
+          section
+            h2 Intellectual Property
+            ul
+              li Companies want to patent everything
+              li If it is critical for the company you cannot publish
+
+          section
+            h2 Challenges haiku
+            p.fragment Industry research
+            p.fragment PhDs with big egos
+            p.fragment money rules it all
+
+
+        section#conclusion
+            h2 Thank you
+            table(border=0,rules="none",frame="<box></box>")#conclusionTable
+              tr
+                th Advantages
+                th Disadvantages
+              tr
+                td Users
+                td Access to users
+              tr
+                td Data
+                td Restrictions on data
+              tr
+                td Computing power
+                td Revenue oriented
+              tr
+                td Focused
+                td Engineering oriented
+              tr
+                td Real world problems
+                td Internal facing
+              tr
+                td
+                td Bigger consequences
+              tr
+                td
+                td IP issues
+            div.contactInfo
+              p John Alexis Guerra Gómez
+              //- a(href="http://johnguerra.co") johnguerra.co
+              //- br
+              a(href="http://twitter.com/duto_guerra") @duto_guerra
+
+    script(src='lib/js/head.min.js')
+    script(src='lib/js/reveal.js')
+
+    script.
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        rollingLinks: true,
+        transition: "convex",
+        //- width: "90%",
+        //- height: 1.0,
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+          // Interpret Markdown in <section> elements
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Syntax highlight for <code> elements
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom in and out with Alt+click
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+
+          // Speaker notes
+          { src: 'plugin/notes/notes.js', async: true },
+
+          //- // Remote control your reveal.js presentation using a touch device
+          //- { src: 'plugin/remotes/remotes.js', async: true },
+
+          //- // MathJax
+          //- { src: 'plugin/math/math.js', async: true }
+        ]
+      });
+    //- script.
+    //-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    //-   ga('create', 'UA-50178794-5', 'auto');
+    //-   ga('send', 'pageview');
+
+
